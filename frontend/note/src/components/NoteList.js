@@ -49,6 +49,7 @@ const NoteList = () => {
                     <li key={note.id} className="border border-gray-400 rounded-lg overflow-hidden shadow-md">
                       <Link to={`/notes/${note.id}/`} className="block">
                         <img src={note.cover_image} alt="" className="w-full h-40 object-cover" />
+                        
                         <div className="p-4">
                           <h2 className="text-lg font-medium text-gray-900">{note.title}</h2>
                           <p className="mt-2 text-gray-600">{note.body.slice(0, 100)}...</p>

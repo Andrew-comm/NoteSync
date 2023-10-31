@@ -13,7 +13,7 @@ function Header() {
   return (
     <header className="flex justify-between items-center px-4 py-6">
       <Link to="/" className="text-2xl font-bold">
-        Notes
+        NotesNest
       </Link>
       <div className="flex items-center">
         <button

@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Note(models.Model):
+    cover_image = models.ImageField(upload_to='images', null=True)
     title=models.CharField(max_length=50, blank=True)
     body = models.TextField(null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
